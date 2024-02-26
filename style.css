@@ -10,18 +10,21 @@ body {
 .container {
   background-color: #fff;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+  gap: 20px;
+  position: relative;
 }
 
-.wrapper {
+.wrapper1 {
   background-color: white;
-  padding: 30px;
-  max-width: 450px;
+  padding: 10px;
+  max-width: 400px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
   gap: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
@@ -30,8 +33,30 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.wrapper2 {
+  min-width: 400px;
+  background-color: white;
+  padding: 50px 10px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  /* position: absolute; */
+  top: 0;
+}
 
-.wrapper h2,
+.wrapper2 p {
+  text-align: justify;
+}
+
+.wrapper1 h2,
 p {
   text-align: center;
 }
@@ -74,6 +99,10 @@ button:hover {
   background-color: hsl(240, 64%, 45%);
 }
 
-.description div{
+.description {
+  /* background-color: red; */
+  font-size: 16px;
+}
+.description div {
   margin-top: 10px;
 }
